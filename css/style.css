@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lobster', cursive;
+}
+
+h1{
+    font-size: 75px;
+    color: white;
+}
+
+p{
+    font-size: 60px;
+    color: white;
+    margin-top: 25px;
+}
+
+.ochtend{
+    background-image: url(../img/morning.png);
+    margin-top: 150px;
+    text-align: center;
+}
+
+.middag{
+    background-image: url(../img/afternoon.png);
+    margin-top: 150px;
+    text-align: center;
+}
+
+.avond{
+    background-image: url(../img/evening.png);
+    margin-top: 150px;
+    text-align: center;
+}
+
+.nacht{
+    background-image: url(../img/night.png);
+    margin-top: 150px;
+    text-align: center;
+}
