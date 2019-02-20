@@ -9,7 +9,7 @@
 <?php 
 date_default_timezone_set("Europe/Amsterdam");
 
-$dayText = ["Morgen", "Middag", "Avond", "Nacht"];
+/*$dayText = ["Morgen", "Middag", "Avond", "Nacht"];*/
 $dayClass = ["morgen", "middag", "avond", "nacht"];
 $timeOfDay = date("H:i:s");
 
