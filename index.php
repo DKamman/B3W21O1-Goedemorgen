@@ -6,18 +6,13 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
 </head>
-<body class="<?php echo $dayClass[$dayTextnr]; ?>">
-     <h1>Goede <?php echo $dayClass[$dayTextnr]; ?>!</h1>
-     <p>Het is nu: <?php echo $timeOfDay ?></p>
-</body>
-</html>
-
-<?php
-
+<?php 
 date_default_timezone_set("Europe/Amsterdam");
+
 $dayText = ["Morgen", "Middag", "Avond", "Nacht"];
 $dayClass = ["morgen", "middag", "avond", "nacht"];
 $timeOfDay = date("H:i:s");
+
 
 if ($timeOfDay < 6) {
     $dayTextnr = 3;
@@ -33,3 +28,8 @@ if ($timeOfDay < 6) {
 
 }
 ?>
+<body class = "<?php echo $dayClass[$dayTextnr]; ?>">
+     <h1>Goede <?php echo $dayClass[$dayTextnr]; ?>!</h1>
+     <p>Het is nu: <?php echo $timeOfDay; ?></p>
+</body>
+</html>
